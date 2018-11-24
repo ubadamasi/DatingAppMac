@@ -21,7 +21,17 @@ export class NavComponent implements OnInit {
       error => {
         console.log('bross ehnn.... the thing bounced oh');
       });
-    // console.log(this.model);
   }
+
+  loggedIn() {
+    const token = localStorage.getItem('token');
+    return !!token;
+  }
+
+  loggedOut() {
+    localStorage.removeItem('token');
+    console.log('logged out');
+  }
+
 
 }
