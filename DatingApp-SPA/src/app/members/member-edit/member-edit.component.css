@@ -12,6 +12,9 @@
     background-color: #fff;
     border-top: none;
 }
+.btn {
+    border-color: #008cba;
+}
 .profile-top {
     padding-left: 15px;
 }
